@@ -1,7 +1,7 @@
-package mapper;
+package com.example.restaurante.mapper;
 
-import dto.ClienteDTO;
-import entity.Cliente;
+import com.example.restaurante.dto.ClienteDTO;
+import com.example.restaurante.entity.Cliente;
 
 public class ClienteMapper {
 

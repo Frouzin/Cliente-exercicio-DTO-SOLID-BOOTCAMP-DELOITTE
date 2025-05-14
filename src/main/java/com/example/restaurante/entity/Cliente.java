@@ -1,4 +1,4 @@
-package entity;
+package com.example.restaurante.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,6 +13,8 @@ public class Cliente {
 
     private String nome;
     private String email;
+
+    public Cliente(){}
 
     public Cliente(Long id, String nome, String email) {
         this.id = id;

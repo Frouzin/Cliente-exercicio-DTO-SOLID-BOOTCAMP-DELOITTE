@@ -1,6 +1,6 @@
-package repository;
+package com.example.restaurante.repository;
 
-import entity.Pedido;
+import com.example.restaurante.entity.Pedido;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PedidoRepository extends JpaRepository<Pedido, Long> {

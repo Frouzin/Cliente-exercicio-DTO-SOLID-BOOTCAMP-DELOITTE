@@ -1,8 +1,10 @@
-package dto;
+package com.example.restaurante.dto;
 
 public class ClienteDTO {
     private String nome;
     private String email;
+
+    public ClienteDTO(){}
 
     public ClienteDTO(String nome, String email) {
         this.nome = nome;

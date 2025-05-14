@@ -1,4 +1,4 @@
-package dto;
+package com.example.restaurante.dto;
 
 import java.time.LocalDate;
 import java.util.List;

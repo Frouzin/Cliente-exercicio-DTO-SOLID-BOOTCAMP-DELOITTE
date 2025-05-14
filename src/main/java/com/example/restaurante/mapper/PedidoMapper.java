@@ -1,9 +1,9 @@
-package mapper;
+package com.example.restaurante.mapper;
 
-import dto.ItemPedidoDTO;
-import dto.PedidoDTO;
-import entity.ItemPedido;
-import entity.Pedido;
+import com.example.restaurante.dto.ItemPedidoDTO;
+import com.example.restaurante.dto.PedidoDTO;
+import com.example.restaurante.entity.ItemPedido;
+import com.example.restaurante.entity.Pedido;
 
 import java.util.List;
 import java.util.stream.Collectors;

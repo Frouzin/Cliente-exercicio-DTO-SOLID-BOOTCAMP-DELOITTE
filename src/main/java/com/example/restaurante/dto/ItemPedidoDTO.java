@@ -1,32 +1,17 @@
-package entity;
+package com.example.restaurante.dto;
 
-import jakarta.persistence.*;
-
-@Entity
-public class ItemPedido {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class ItemPedidoDTO {
 
     private String produto;
     private Integer quantidade;
     private Double precoUnitario;
 
-    @ManyToOne
-    @JoinColumn(name = "pedido_id")
-    private Pedido pedido;
+    public ItemPedidoDTO(){}
 
-    public Double getSubtotal() {
-        return quantidade * precoUnitario;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public ItemPedidoDTO(String produto, Integer quantidade, Double precoUnitario){
+        this.produto = produto;
+        this.quantidade = quantidade;
+        this.precoUnitario = precoUnitario;
     }
 
     public String getProduto() {
@@ -51,13 +36,5 @@ public class ItemPedido {
 
     public void setPrecoUnitario(Double precoUnitario) {
         this.precoUnitario = precoUnitario;
-    }
-
-    public Pedido getPedido() {
-        return pedido;
-    }
-
-    public void setPedido(Pedido pedido) {
-        this.pedido = pedido;
     }
 }

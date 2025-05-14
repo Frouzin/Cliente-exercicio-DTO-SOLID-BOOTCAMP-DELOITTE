@@ -1,6 +1,6 @@
-package repository;
+package com.example.restaurante.repository;
 
-import entity.Cliente;
+import com.example.restaurante.entity.Cliente;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ClienteRepository extends JpaRepository<Cliente, Long> {

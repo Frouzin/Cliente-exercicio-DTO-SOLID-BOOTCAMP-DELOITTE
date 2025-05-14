@@ -1,4 +1,4 @@
-package entity;
+package com.example.restaurante.entity;
 
 import jakarta.persistence.*;
 
@@ -54,6 +54,6 @@ public class Pedido {
     public void setItens(List<ItemPedido> itens) {
         this.itens = itens;
 
-        this.valorTotal = itens.stream().mapToDouble(ItemPedido::getSubTotal).sum();
+        this.valorTotal = itens.stream().mapToDouble(ItemPedido::getSubtotal).sum();
     }
 }

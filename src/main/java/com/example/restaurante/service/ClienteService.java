@@ -1,11 +1,11 @@
-package service;
+package com.example.restaurante.service;
 
-import dto.ClienteDTO;
-import entity.Cliente;
-import mapper.ClienteMapper;
+import com.example.restaurante.dto.ClienteDTO;
+import com.example.restaurante.entity.Cliente;
+import com.example.restaurante.mapper.ClienteMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.ClienteRepository;
+import com.example.restaurante.repository.ClienteRepository;
 
 @Service
 public class ClienteService {
